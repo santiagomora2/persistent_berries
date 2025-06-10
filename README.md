@@ -105,18 +105,21 @@ Este proyecto simula y analiza series temporales del precio de la frambuesa util
 
 ```mermaid
 graph TD
-    A[Simulación de Series de Tiempo] --> B[Inserción de eventos (mercado/clima)]
-    B --> C[Series etiquetadas (con/sin eventos)]
-    C --> D[Embedding TDA (Takens / Sliding)]
-    D --> E[Reducción dimensional (PCA)]
+    A[Simulación de Series de Tiempo] --> B[Inserción de eventos: mercado o clima]
+    B --> C[Series etiquetadas: con o sin eventos]
+    C --> D[Embedding TDA: Takens o Sliding Window]
+    D --> E[Reducción dimensional: PCA]
     E --> F[Diagramas de Persistencia]
-    F --> G[Extracción de Features (Entropía / Amplitud)]
-    G --> H[Entrenamiento Clasificador Binario]
-    H --> I[Evaluación en Datos Reales]
-    I -->|Predicción| J[¿Serie tiene evento? → ✅/❌]
+    F --> G[Extracción de features: entropía o amplitud]
+    G --> H[Entrenamiento de clasificador binario]
+    H --> I[Evaluación con serie real]
+    I -->|Evento detectado| J[✅ Evento]
+    I -->|No detectado| K[❌ Sin evento]
 
-    F --> K[Comparación Topológica]
+
+    F --> K[Comparación topológica]
     K -->|Distancia Wasserstein| L[Similitud con serie real]
+
 
 ```
 
