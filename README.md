@@ -101,6 +101,25 @@ Este proyecto simula y analiza series temporales del precio de la frambuesa util
 - Experimentar con modelos no lineales y embeddings más profundos.
 ---
 
+## Diagrama 
+
+```
+graph TD
+    A[Simulación de Series de Tiempo] --> B[Inserción de eventos (mercado/clima)]
+    B --> C[Series etiquetadas (con/sin eventos)]
+    C --> D[Embedding TDA (Takens / Sliding)]
+    D --> E[Reducción dimensional (PCA)]
+    E --> F[Diagramas de Persistencia]
+    F --> G[Extracción de Features (Entropía / Amplitud)]
+    G --> H[Entrenamiento Clasificador Binario]
+    H --> I[Evaluación en Datos Reales]
+    I -->|Predicción| J[¿Serie tiene evento? → ✅/❌]
+
+    F --> K[Comparación Topológica]
+    K -->|Distancia Wasserstein| L[Similitud con serie real]
+
+```
+
 ## 🧾 Licencia
 Este proyecto está bajo la Licencia MIT — consulta el archivo LICENSE para más información.
 
