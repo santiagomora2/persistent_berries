@@ -101,8 +101,14 @@ Este proyecto simula y analiza series temporales del precio de la frambuesa util
 - Experimentar con modelos no lineales y embeddings más profundos.
 ---
 
-## 💡 Créditos
-
-Desarrollado por **Santiago**, como parte del reto final de Intelica 2025.
+## 🧾 Licencia
+Este proyecto está bajo la Licencia MIT — consulta el archivo LICENSE para más información.
 
 ---
+## ✍️ Autores
+* Santiago Mora Cruz
+* Guillermo Villegas Morales
+* Gabriel Reynoso Escamilla
+* Gabriel Eduardo Meléndez Zavala
+
+> Estudiantes de Ingeniería en Ciencia de Datos y Matemáticas.
