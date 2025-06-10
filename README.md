@@ -103,7 +103,7 @@ Este proyecto simula y analiza series temporales del precio de la frambuesa util
 
 ## Diagrama 
 
-```
+```mermaid
 graph TD
     A[Simulación de Series de Tiempo] --> B[Inserción de eventos (mercado/clima)]
     B --> C[Series etiquetadas (con/sin eventos)]
